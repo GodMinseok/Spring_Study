@@ -10,4 +10,5 @@ public class InflearnSpringBasicApplication {
 		SpringApplication.run(InflearnSpringBasicApplication.class, args);
 	}
 
+
 }
