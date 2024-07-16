@@ -12,18 +12,6 @@ public class Member {
         this.grade = grade;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setGrade(Grade grade) {
-        this.grade = grade;
-    }
-
     public Long getId() {
         return id;
     }
@@ -34,5 +22,17 @@ public class Member {
 
     public Grade getGrade() {
         return grade;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 }
