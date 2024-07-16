@@ -1,11 +1,8 @@
 package hello.Inflearn_Spring_Beginner;
 
-import hello.Inflearn_Spring_Beginner.repository.JdbcMemberRepository;
+import hello.Inflearn_Spring_Beginner.repository.JdbcTemplateMemberRepository;
 import hello.Inflearn_Spring_Beginner.repository.MemberRepository;
-import hello.Inflearn_Spring_Beginner.repository.MemoryMemberRepository;
 import hello.Inflearn_Spring_Beginner.service.MemberService;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
@@ -22,6 +19,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 // return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+// return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
