@@ -6,6 +6,7 @@ import hello.Inflearn_Spring_Basic.member.MemberService;
 import hello.Inflearn_Spring_Basic.member.MemberServiceImpl;
 import hello.Inflearn_Spring_Basic.order.Order;
 import hello.Inflearn_Spring_Basic.order.OrderService;
+import hello.Inflearn_Spring_Basic.order.OrderServiceImpl;
 
 public class OrderApp {
 
