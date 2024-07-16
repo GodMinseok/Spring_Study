@@ -3,9 +3,11 @@ package hello.Inflearn_Spring_Beginner.service;
 import hello.Inflearn_Spring_Beginner.domain.Member;
 import hello.Inflearn_Spring_Beginner.repository.MemberRepository;
 import hello.Inflearn_Spring_Beginner.repository.MemoryMemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
