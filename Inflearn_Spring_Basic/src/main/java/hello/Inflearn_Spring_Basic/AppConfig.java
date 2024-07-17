@@ -10,6 +10,7 @@ import hello.Inflearn_Spring_Basic.member.MemoryMemberRepository;
 import hello.Inflearn_Spring_Basic.order.OrderService;
 import hello.Inflearn_Spring_Basic.order.OrderServiceImpl;
 
+
 public class AppConfig {
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
