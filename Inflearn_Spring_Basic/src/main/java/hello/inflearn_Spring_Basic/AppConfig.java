@@ -9,8 +9,10 @@ import hello.inflearn_Spring_Basic.member.MemberServiceImpl;
 import hello.inflearn_Spring_Basic.member.MemoryMemberRepository;
 import hello.inflearn_Spring_Basic.order.OrderService;
 import hello.inflearn_Spring_Basic.order.OrderServiceImpl;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 @Configuration
 public class AppConfig {
@@ -34,6 +36,7 @@ public class AppConfig {
         return new MemberServiceImpl(memberRepository());
     }
     @Bean
+    @Primary
     public MemberRepository memberRepository() {
         System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
